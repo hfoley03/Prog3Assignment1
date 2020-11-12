@@ -37,7 +37,7 @@ public class Course {
    public void printModules(){
        System.out.println("Modules in this Course: ");
        for(Module mod : moduleList) {
-            System.out.println(mod.getName());
+            System.out.println(mod.getName() +" "+ mod.getId() + "\n" + mod.getStudents());
         }
    }
    public LocalDate getStart(){
@@ -53,16 +53,19 @@ public class Course {
    public void printStudents(){
        System.out.println("Students in this Course: ");
        for(Student stud : studentList) {
-            System.out.println(stud.getName());
+            System.out.println("~" + stud.getName() +"  " + stud.retrunUsername());
         }
    }
    
    public void courseInfo(Course c){
-   System.out.println(c.getName());
+   System.out.println("Course Name: " + c.getName());
    System.out.println("Start Date: " + getStart());
    System.out.println("End Date: " + getEnd());
+   System.out.println("\n");
+   c.printStudents();
+   System.out.println("\n");
    c.printModules();
-   c.printStudents();   
+      
    }
    
     }

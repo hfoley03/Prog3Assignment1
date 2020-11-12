@@ -54,7 +54,7 @@ public class Student {
     }
     public void printInfo(){
         System.out.println("Name: " + getName() + "\nUsername: " + retrunUsername() 
-                            + "\nID: " + getId() + "\nAge: " + getAge() + "\nDOB: " + getDob() );
+                            + "\nID: " + getId() + "\nAge: " + getAge() + "\nDOB: " + getDob()  );
     }
     }
     
