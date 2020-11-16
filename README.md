@@ -1,2 +1,2 @@
 # StudentModuleCourse
-Assignment 1 for Programming III 
+Part A Assignment 1 Software Engineering III
