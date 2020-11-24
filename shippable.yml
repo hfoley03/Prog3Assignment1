@@ -5,7 +5,7 @@ jdk:
 
 build:
   ci: 
-    - mkdir -p shippable
-    - mkdir -p shippable
+    - mkdir -p shippable/go
+    - mkdir -p shippable/go2
     - mvn clean verify 
-    - cp target/surefire-reports/^ shippable/testresults
+    - cp target/surefire-reports/^ shippable/go2
