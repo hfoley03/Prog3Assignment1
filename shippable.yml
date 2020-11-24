@@ -1,11 +1,11 @@
 language: java
 
 jdk:
-  - oraclejdk11
+  - oraclejdkll
 
 build:
   ci: 
-    - mkdir -p shippable/go
-    - mkdir -p shippable/go2
+    - mkdir -p shippable/codeconverge 
+    - mkdir -p shippable/testresults
     - mvn clean verify 
-    - cp target/surefire-reports/* shippable/go2
+    - cp target/surefire-reports/* shippable/testresults
